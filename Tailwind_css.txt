@@ -1,0 +1,92 @@
+What is TailwindCSS?
+--Tailwind CSS is a CSS framework for rapidly building modern websites without ever leaving your HTML.
+
+Installation
+--ReactJS Users
+--NextJS Users
+
+Sizings
+--width 
+    w -- w-4 || w-[200px] || w-full 
+--height 
+    h -- h-4 || h-[100px] || h-screen 
+--max-width --- it is the maximum width a component can aquire after that width will stop increaring and the valure  of the component will be fixed 
+    max-w-screen-lg   ||  max-w-screen-sm
+
+--max-height
+    m-h
+--margin
+    m-4 || m-[100px] || mr-4 || mt-5
+    margin is for outside shifting of the elements in the Tailwind i.e if you have to shift up or down left or right of whole box
+--padding
+    p-4 || p-[200px] || pr-3 || pt-5 
+    padding is for inside elements shifting -- i.e top bottom right and left
+    for arbaity value always write them inside the [] eg-[200px] 
+Borders
+    --use Borders for reference purposes
+    --border-width 
+        border-5
+    --border-color
+        border-red-500
+    --border-radius
+        rounded-sm || rounded-lg
+
+Layout
+    --position 
+        absolute --- it is used  for inside elements
+        relative --- it is used for outside elements 
+    --How to position elements at the center using absolute
+         <div className=" relative max-w-screen-lg h-screen border-red-500 border-4 bg-cyan-100 rounded-lg m-0 pl-7" > 
+            <div className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]  w-[200px] h-[200px] bg-black boreder-3 border-green-600 rounded-[4px] "></div>
+        </div>
+    --flexbox
+        gap-3 // property of flexbox gap b/w the box is gap-3 || gap-[200px]
+        flex  // default value of flex is it allign the items in row websites
+            justify-   it is used for allign the items in x direction
+            items - (allign -it is used to allign the items in y-direction)
+        flex flex-col  ---for allign the items in col wise
+            justify-   it is used for allign the items in y direction
+            items - (allign -it is used to allign the items in xx-direction)
+
+Background
+    -bg-color
+        -https://colorhunt.co/
+    -bg-gradient
+        bg-gradient-t-tr to- from- via- || bg-gradient-t-br  // tr- top right // br -bottom right // from- starting to-end via-between
+        -https://cssgradient.io/
+    -opacity
+
+Typography
+    --font-size
+        text-lg || text-[50px]
+    --font-color
+        text-zinc-500
+    --font-weight 
+        font-bold
+    --font-allign
+        text-center
+    --font-family
+        font-['tomato_grotesk'] || font-['gilroy']
+    --text-transform
+        captialize/uppercase/lowercase
+    --line-height  (height between 2 lines )
+        leading
+    --line-spacing (distance b/w words)
+        tracking
+
+
+Box-shadow
+    shadow-
+    --shadow with design
+       - https://ui.aceternity.com/tools/box-shadows
+
+Transitions 
+    hover
+        hover:bg- || hover:shadow-
+        ease-[cubic]
+    https://easings.net/
+    
+    transition duration
+
+Responsiveness
+    --Desktop first approach 
